@@ -1,0 +1,489 @@
+:root{
+    --button-color: rgb(47 122 247);
+    --text-color: rgb(43 45 66);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Outfit", sans-serif;;
+}
+
+p{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+header{
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.562)), url(./b.g.jpg);
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 25px;
+}
+
+.main-nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.main-nav a:hover{
+    text-decoration: underline;
+}
+
+.intro{
+    color: #fff;
+    padding: 210px 0;
+}
+
+.intro h1{
+    font-weight: bold;
+    font-size: 80px;
+}
+.intro p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.intro a{
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-one{
+    background-color:var(--button-color);
+    padding: 20px 40px;
+    color: #fff;
+    margin-right: 20px;
+}
+.btn-one:hover{
+    background-color: rgb(23, 2, 44);
+}
+.btn-two{
+    background-color: #fff;
+    color: black;
+    padding: 20px 40px;
+}
+.btn-two:hover{
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+.width-intr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.width-intr h1{
+    max-width: 600px;
+    text-align: center;
+}
+
+.width-intr p{
+    max-width: 900px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.course h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--text-color);
+    padding-bottom: 20px;
+}
+.course p{
+    color: var(--text-color);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px 20px;
+    padding: 0 20px;
+    padding-bottom: 120px;
+    grid-template-areas: 
+    "Manufacturing Building LeatherWorks FashionDesign"
+    "Academics Culinary AutoMechanics HandyMan"; 
+}
+.box{
+    border-radius: 8px;
+}    
+.manufacturing{
+    grid-area: Manufacturing;
+    background-image: url(./Manufacturing1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.building{
+    grid-area: Building;
+    background-image: url(./Building2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.leatherWorks{
+    grid-area: LeatherWorks;
+    background-image:url(./Leather-works3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fashionDesign{
+    grid-area: FashionDesign;
+    background-image: url(./Fashion-design4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.academics{
+    grid-area: Academics;
+    background-image: url(./Academics5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.culinary{
+    grid-area: Culinary;
+    background-image:url(./Culinary6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.autoMechanics{
+    grid-area: AutoMechanics;
+    background-image: url(./Auto-mechanics7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.handyMan{
+    grid-area: HandyMan;
+    background-image: url(./Handy-man8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 700px);
+    grid-template-areas: 
+    "imageleft textright"
+    "textleft imageright";
+}
+.imageleft{
+    grid-area: imageleft;
+    background-image: url(./f-left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textright{
+    grid-area: textright;
+}
+.textleft{
+    grid-area: textleft;
+}
+.imageright{
+    grid-area: imageright;
+    background-image: url(./f-right.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-one{
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    color: #fff;
+}
+.footer-one h1{
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 700px;
+    text-align: center;
+}
+.footer-one a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: var(--button-color);
+    border-radius: 5px;
+}
+.footer-one > h1, .footer-one > p{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.footer-one a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.footer-two{
+    padding: 150px 0;
+    background-color: black;
+    color:var(--text-color);
+}
+
+.text-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.skillcon h3{
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+.frequentaq{
+    display: flex;
+    flex-direction: column;
+}
+.frequentaq ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.frequentaq a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+.frequentaq a:hover{
+    color: #fff;
+}
+
+.textright{
+    color: var(--text-color);
+    padding: 0 150px;
+    padding-top: 60px;
+    line-height: 25px;
+}
+.textright span{
+    font-size: 16px;
+    padding-right: 3px;
+}
+.textright h1{
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 30px;
+    line-height: 50px;
+}
+.textright ul{
+    list-style-type: var(--text-color);
+}
+
+.learn{
+    padding-top: 40px;
+}
+.learn a{
+    padding: 20px 40px;
+    background-color: var(--button-color);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.learn a:hover{
+    background-color: var(--text-color);
+}
+
+.textleft{
+    color: var(--text-color);
+    padding: 0 150px;
+    padding-top: 80px;
+}
+.textleft h1{
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.textleft h3{
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.textleft p{
+    line-height: 25px;
+    /* font-size: 20px; */
+}
+
+.teach{
+    padding-top: 40px;
+}
+
+.teach a{
+    padding: 18px 45px;
+    background-color: var(--button-color);
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.teach a:hover{
+    background-color: var(--text-color);
+}
+
+
+@media only screen and (max-width:767px) {
+    .main-nav{
+        display: none;
+    }
+    .intro{
+        padding: 30px 50px;
+    }
+    .width-intr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 auto;
+
+    }
+    .width-intr h1{
+        font-size: 30px;
+        padding-bottom: 20px;
+        max-width: 200px;
+        text-align: center;
+    }
+    .width-intr p{
+        font-size: 17px;
+        line-height: 23px;
+    }
+    header{
+        height: 550px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.562)), url(./b.g.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+  
+    .course{
+        padding: 30px 10px;
+
+    }
+    .container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(4, 150px);
+       grid-template-areas: 
+       "Manufacturing Building"
+       "LeatherWorks FashionDesign"
+       "Academics Culinary"
+       "AutoMechanics HandyMan";
+       padding-bottom: 60px;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 600px 300px 600px;
+        grid-template-areas: 
+        "imageleft"
+        "textright"
+        "imageright"
+        "textleft";
+    }
+    .textright{
+        padding: 20px 50px;
+        line-height: 20px;
+    }
+    .title{
+        font-weight: bold;
+    }
+    .textright h1{
+        font-size: 30px;
+    }
+    .textright{
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    .textright span{
+        font-size: 14px;
+    }
+    .textleft{
+        padding: 20px 40px;
+    }
+    .textleft h1{
+        font-size: 30px;
+    }
+    .textleft p{
+        font-size: 14px;
+        padding-right: 20px;
+    }
+ .textleft h3{
+    font-size: 20px;
+ }
+
+ .course h1{
+    font-size: 30px;
+    max-width: 200px;
+    text-align: center;
+ }
+ .footer-one{
+    padding: 80px 50px;
+ }
+ .footer-one h1{
+    font-size: 40px;
+ }
+ .footer-one p{
+    line-height: 25px;
+ }
+ .footer-two{
+    padding: 60px;
+ }
+ .text-icon{
+    display: flex;
+    flex-direction: column;
+ }
+ .icons{
+    padding-bottom: 50px;
+ }
+ .frequentaq{
+    padding-top: 50px;
+    display: flex;
+    justify-content: left;
+ }
+ body{
+    overflow-x: hidden;
+ }
+ .header-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .btn-one{
+    margin-bottom: 20px;
+    padding: 12px 20px;
+ }
+ .btn-two{
+    padding: 12px 20px;
+ }
+}
